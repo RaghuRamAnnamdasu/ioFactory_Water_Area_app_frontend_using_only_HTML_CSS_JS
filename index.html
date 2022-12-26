@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <title>Trapped Water Area Question</title>
+</head>
+<body>
+    <div class="App">
+        <div class = "formEnclosure">
+            <div class="inputForm">
+                <label for='input'>Enter input Array</label>
+                <input type="text" id="input" placeholder='Enter array elements separated by space' onblur = {handleInputChange()}>
+            </div>
+            <button type="button" onclick={handleClick()}>Click to visualize </button>
+        </div>
+        <div class="example">
+            Eg: For array of <span>[1,2,3,4]</span>, input shall be entered in the form of <span>1 2 3 4</span>
+        </div>
+        <div class = "output"></div>
+        <div class = "visualizationEnclosure">
+            <svg class="graph" id="graph" width = "750" height ="350" ></svg>
+            <div class="colorDenotion">
+                <div class="wallText"> <div></div>---Block</div>
+                <div class="waterText"> <div></div>---Water</div>
+            </div>
+        </div>
+      </div>
+      <script src = "index.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+.App{
+    padding: 30px;
+    display: grid;
+    gap: 40px;
+}
+
+
+.formEnclosure{
+    display: flex;
+    gap: 50px;
+}
+
+.inputForm{
+    width: 60%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+label{
+    width:20%;
+}
+
+input{
+    height: 30px;
+    width: -webkit-fill-available;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+button{
+    border-radius: 10px;
+    background-color: firebrick;
+    border: 1px solid firebrick;
+    color: white;
+    padding: 8px 16px;
+}
+
+.example{
+    color: gray;
+}
+
+.example span{
+    color: red;
+}
+
+svg{
+    border: 2px solid black;
+    margin-bottom: 40px;
+}
+
+.colorDenotion {
+    display: flex;
+    gap: 40px;
+} 
+
+.wallText div,
+.waterText div{
+    width : 15px;
+    height: 15px;
+    border: 1px solid black;
+    display: inline-block
+}
+
+.wallText div{
+    background-color: yellow;
+}
+
+.waterText div{
+    background-color: skyblue;
+}
+
+.output{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.output span{
+    color: firebrick;
+}
+
+.wallText,
+.waterText{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+@media screen and (max-width: 480px){  
+    .formEnclosure{
+        display : grid;
+        justify-content: start;
+        gap: 20px;
+    }
+
+    .inputForm{
+        display : grid;
+        width: 100%;
+    }
+
+    input,label{
+        width: 100%;
+        min-width: 250px;
+    }
+
+    button{
+        width: fit-content;
+    }
+
+    svg{
+        width : auto%;
+    }
+
+    .output,.example{
+        max-width: 300px;
+    }
+
+   
+
+}
